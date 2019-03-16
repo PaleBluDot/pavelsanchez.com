@@ -7,8 +7,8 @@ My personal portfolio website and blog.
 - [ ] Wireframe
 - [ ] Design
 - [ ] Develop
-  - [ ] Add Codacy
-  - [ ] Add CircleCI
+  - [x] Add Codacy
+  - [x] Add CircleCI
   - [ ] Add Jest
   - [ ] QA
 - [ ] Deploy

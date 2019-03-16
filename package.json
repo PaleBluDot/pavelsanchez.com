@@ -1,0 +1,23 @@
+{
+  "name": "psd.com",
+  "version": "0.0.1",
+  "description": "My personal portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaleBluDot/PSD.com.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Pavel Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaleBluDot/PSD.com/issues"
+  },
+  "homepage": "https://github.com/PaleBluDot/PSD.com#readme"
+}

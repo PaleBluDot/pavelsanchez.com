@@ -1,0 +1,6 @@
+{
+  // Makes all rc files default to YAML language
+  "files.associations": {
+    ".*rc": "yaml"
+  }
+}

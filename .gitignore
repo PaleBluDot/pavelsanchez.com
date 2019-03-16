@@ -1,0 +1,10 @@
+# Directories
+node_modules/
+build/
+# .vscode/
+
+# Files
+*.log
+*.env
+# .*rc
+# .*ignore
