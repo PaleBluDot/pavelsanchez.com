@@ -1,0 +1,30 @@
+// --------------------All styles related to the color bar
+
+#header {
+  position: relative;
+}
+
+.color-bar {
+  display: flex;
+  height: 10px;
+  background: $brand-color;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.color-bar-animation {
+  animation: colorchange 3s ease-in-out infinite;
+}
+
+@keyframes colorchange {
+  25% {
+    background: $brand-color-alt-pink;
+  }
+  50% {
+    background: $brand-color-alt-yellow;
+  }
+  75% {
+    background: $brand-color-alt-teal;
+  }
+}

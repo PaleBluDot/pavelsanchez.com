@@ -1,0 +1,81 @@
+// --------------------This file contains very basic styles.
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+  transition: all 0.5 ease-in-out;
+}
+
+body {
+  background: $mid-grey;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Code Styles */
+pre {
+  // white-space: pre-wrap;
+  // white-space: -moz-pre-wrap;
+  // white-space: -o-pre-wrap;
+  // word-wrap: break-word;
+  background: $light-grey;
+  border: 1px solid $mid-grey;
+  border-left: 4px solid $brand-color;
+  color: $dark-grey;
+  page-break-inside: avoid;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 1em 1.5em;
+  display: block;
+  border-radius: 4px;
+}
+
+code {
+  font-family: $code-font-stack;
+  font-size: 14px;
+  background: $light-grey;
+  color: $dark-grey;
+  padding: 2px 6px;
+  display: inline-block;
+  border-radius: 3px;
+  letter-spacing: 0.4px;
+}
+
+/*********************************
+ ************ SCROLLBAR
+**********************************/
+
+/* width */
+pre::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+pre::-webkit-scrollbar-track {
+  background: $light-grey;
+}
+
+/* Handle */
+pre::-webkit-scrollbar-thumb {
+  background: $mid-grey;
+}
+
+/* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+  background: $brand-color-alt-red;
+}

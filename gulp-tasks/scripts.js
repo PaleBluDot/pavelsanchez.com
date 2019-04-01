@@ -9,10 +9,10 @@ const pump = require('pump');
 gulp.task('scripts', function(done) {
   pump(
     [
-      gulp.src(project.buildSrc + '/assets/js/**/*.js'),
+      gulp.src(project.buildSrc + '/src/js/**/*.js'),
       concat('app.js'),
       uglify(),
-      gulp.dest(project.buildDest + '/assets/js')
+      gulp.dest(project.buildDest + '/src/js')
     ],
     done()
   );

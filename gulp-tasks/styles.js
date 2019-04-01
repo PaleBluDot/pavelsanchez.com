@@ -5,11 +5,11 @@ const sass = require('gulp-sass');
 // Compile SCSS files to CSS
 gulp.task('styles', function() {
   return gulp
-    .src(project.buildSrc + '/assets/sass/style.scss')
+    .src(project.buildSrc + '/src/sass/style.scss')
     .pipe(
       sass({
         outputStyle: 'expanded'
       }).on('error', sass.logError)
     )
-    .pipe(gulp.dest(project.buildDest + '/assets/css'));
+    .pipe(gulp.dest(project.buildDest + '/src/css'));
 });
