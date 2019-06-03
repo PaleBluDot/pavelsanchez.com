@@ -1,10 +1,20 @@
 {
   "name": "psd.com",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "My personal portfolio website",
+  "homepage": "https://github.com/PaleBluDot/PSD.com#readme",
+  "bugs":  "https://github.com/PaleBluDot/PSD.com/issues",
   "main": "index.html",
+  "license": "MIT",
+  "author": {
+    "name": "Pavel Sanchez",
+    "email": "info@pavelsanchez.design",
+    "url": "https://pavelsanchez.design"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm build",
+    "dev": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -12,12 +22,7 @@
   },
   "keywords": [
     "portfolio",
-    "website"
-  ],
-  "author": "Pavel Sanchez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PaleBluDot/PSD.com/issues"
-  },
-  "homepage": "https://github.com/PaleBluDot/PSD.com#readme"
+    "website",
+    "designer"
+  ]
 }
