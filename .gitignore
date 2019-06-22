@@ -1,10 +1,20 @@
 # Directories
 node_modules/
 build/
-# .vscode/
+dist/
+
+
 
 # Files
 *.log
 *.env
-# .*rc
-# .*ignore
+npm-debug.*
+*.scssc
+*.swp
+.DS_Store
+.sass-cache
+
+
+# Hide design tokens
+src/scss/_tokens.scss
+src/_includes/assets/*
