@@ -16,7 +16,7 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Build
-          command: npm run build
+          command: npm run prod
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
