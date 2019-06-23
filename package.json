@@ -4,8 +4,8 @@
   "description": "Portfolio website of Pavel Sanchez that fatures his web and print design, web development, and calligraphy.",
   "scripts": {
     "start": "npm run dev",
-    "dev": "gulp assets && cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "gulp build && cross-env ELEVENTY_ENV=prod eleventy",
+    "dev": "gulp dev && cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "gulp assets && cross-env ELEVENTY_ENV=prod eleventy",
     "seed": "cross-env ELEVENTY_ENV=seed eleventy"
   },
   "repository": {
