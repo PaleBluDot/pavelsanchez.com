@@ -43,9 +43,10 @@ module.exports = function(config) {
     dir: {
       input: "src/site",
       output: "build",
+      includes: '_includes',
       data: `_data/${env}`
     },
-    templateFormats : ["njk", "md", "11ty.js"],
+    templateFormats : ["njk", "md", "11ty.js", 'html', 'liquid'],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true

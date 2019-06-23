@@ -1,0 +1,20 @@
+{
+	"title": "PSD",
+	"url": "https://pavelsanchez.com",
+	"repo": "https://github.com/PaleBluDot/PSD.com",
+	"description": "Portfolio website of Pavel Sanchez that fatures his web and print design, web development, and calligraphy",
+	"author": {
+		"name": "Pavel Sanchez",
+		"Handle": "@psdbk",
+		"email": "info@pavelsanchez.com",
+		"url": "https://pavelsanchez.com/"
+	},
+	"feed": {
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"url": "https://staging.pavelsanchez.com/feed/feed.xml",
+		"id": "https://staging.pavelsanchez.com/"
+	},
+}
+
+

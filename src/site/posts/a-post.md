@@ -16,5 +16,6 @@ It looks like this:
   "templateEngineOverride": "njk,md"
 }
 ```
+To pull from the `package.json` file, use this naming convention `pkg.repository.url`
 
-
+The site's metadata {{ site.description }}
