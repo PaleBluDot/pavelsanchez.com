@@ -9,7 +9,7 @@ const pump = require('pump');
 gulp.task('scripts', function(done) {
   pump(
     [
-      gulp.src(project.buildSrc + '/_includes/js/**/*.js'),
+      gulp.src(project.buildSrc + '/_includes/assets/js/**/*.js'),
       concat('app.js'),
       uglify(),
       gulp.dest(project.buildDest + '/js')

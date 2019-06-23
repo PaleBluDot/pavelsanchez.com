@@ -11,7 +11,7 @@ gulp.task('generate', shell.task('eleventy'));
 gulp.task('assets', gulp.parallel('images', 'styles', 'scripts'));
 
 // Let's build this sucker, without getting data from online sources
-gulp.task('dev', gulp.series('clean-build', 'generate', 'assets', 'serve'));
+gulp.task('dev', gulp.series('clean-build', 'assets'));
 
 // Let's gwt the data we need and then build this sucker.
 gulp.task(

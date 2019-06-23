@@ -7,12 +7,12 @@ const browserSync = require('browser-sync').create();
 */
 gulp.task('watch', function() {
   gulp
-    .watch(project.buildSrc + '/_includes/js/**/*', gulp.parallel('scripts'))
+    .watch(project.buildSrc + '/_includes/assets/js/**/*', gulp.parallel('scripts'))
     .on('change', browserSync.reload);
   gulp
     .watch(project.buildSrc + '/_includes/assets/sass/**/*', gulp.parallel('styles'))
     .on('change', browserSync.reload);
   gulp
-    .watch(project.buildSrc + '/**/*', gulp.parallel('generate'))
+    .watch(project.buildSrc + '**/**/*', gulp.parallel('generate'))
     .on('change', browserSync.reload);
 });
