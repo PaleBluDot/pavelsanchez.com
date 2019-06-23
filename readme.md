@@ -6,7 +6,7 @@ My personal portfolio website and blog.
 
 ## Todo list
 
-- [ ] Design
+- [x] Design
 - [ ] Develop
   - [x] Add Codacy
   - [x] Add CircleCI
