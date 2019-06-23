@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp dev && cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "gulp assets && cross-env ELEVENTY_ENV=prod eleventy",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy",
     "seed": "cross-env ELEVENTY_ENV=seed eleventy"
   },
   "repository": {
