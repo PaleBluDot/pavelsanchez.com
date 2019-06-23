@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{ title }}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
@@ -18,17 +19,6 @@
       {% include "js/core.js" %}
       {% include "js/hello.js" %}
     {% endset %}
-    <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
     <script>{{ js | jsmin | safe }}</script>
 
   </body>
