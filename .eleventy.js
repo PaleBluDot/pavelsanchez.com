@@ -1,56 +1,53 @@
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-// Import filters
-const dateFilter = require('./src/filters/date-filter.js');
-const markdownFilter = require('./src/filters/markdown-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-// Import transforms
-const htmlMinTransform = require('./src/transforms/html-min-transform.js');
-const parseTransform = require('./src/transforms/parse-transform.js');
-
-// Import data files
-const site = require('./src/_data/site.json');
 
 module.exports = function(config) {
-  // Filters
-  config.addFilter('dateFilter', dateFilter);
-  config.addFilter('markdownFilter', markdownFilter);
-  config.addFilter('w3DateFilter', w3DateFilter);
 
-  // Layout aliases
-  config.addLayoutAlias('home', 'layouts/home.njk');
+  // A useful way to reference the context we are runing eleventy in
+  let env = process.env.ELEVENTY_ENV;
 
-  // Transforms
-  config.addTransform('htmlmin', htmlMinTransform);
-  config.addTransform('parse', parseTransform);
+  // Layout aliases can make templates more portable
+  config.addLayoutAlias('default', 'layouts/base.njk');
 
-  // Passthrough copy
-  config.addPassthroughCopy('src/fonts');
-  config.addPassthroughCopy('src/images');
-  config.addPassthroughCopy('src/admin/config.yml');
+  // Add some utility filters
+  config.addFilter("squash", require("./src/utils/filters/squash.js") );
+  config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
 
-  // Custom collections
-  config.addCollection('posts', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
-  });
 
-  config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')]
-      .reverse()
-      .slice(0, site.maxPostsPerPage);
-  });
-
-  // Plugins
-  config.addPlugin(rssPlugin);
+  // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
 
+  // minify the html output
+  config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+
+  // compress and combine js files
+  config.addFilter("jsmin", function(code) {
+    const UglifyJS = require("uglify-js");
+    let minified = UglifyJS.minify(code);
+      if( minified.error ) {
+          console.log("UglifyJS error: ", minified.error);
+          return code;
+      }
+      return minified.code;
+  });
+
+
+  // pass some assets right through
+  config.addPassthroughCopy("./src/site/images");
+
+  // make the seed target act like prod
+  env = (env=="seed") ? "prod" : env;
   return {
     dir: {
-      input: 'src',
-      output: 'build'
+      input: "src/site",
+      output: "build",
+      data: `_data/${env}`
     },
+    templateFormats : ["njk", "md", "11ty.js"],
+    htmlTemplateEngine : "njk",
+    markdownTemplateEngine : "njk",
     passthroughFileCopy: true
   };
+
 };

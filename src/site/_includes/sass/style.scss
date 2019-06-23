@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file imports all the sass files
+// -----------------------------------------------------------------------------
+
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import 'helpers/variables';
+@import 'helpers/colors';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+// 2. Vendors
+@import 'base/syntax';
+@import 'vendor/normalize';
+@import 'vendor/_boostrap-grid';
+
+// 3. Base stuff
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/color-bar';
+
+// 5. Components
+@import 'components/box-wrap';
+@import 'components/button';
+@import 'components/logo';
+@import 'components/nav';
+
+// 6. Page-specific styles
+@import 'pages/home';
+
+// 7. Themes
+@import 'themes/default';

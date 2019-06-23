@@ -17,4 +17,4 @@ npm-debug.*
 
 # Hide design tokens
 src/scss/_tokens.scss
-src/_includes/assets/*
+src/_includes/*
