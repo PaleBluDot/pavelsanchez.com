@@ -8,8 +8,11 @@ My personal portfolio website and blog.
 
 - [x] Design
 - [ ] Develop
-  - [x] Add Codacy
-  - [x] Add CircleCI
-  - [ ] Add Jest
+  - [x] Codacy
+  - [x] CircleCI
+  - [ ] Features
+    - [ ] Personal Stylesheet
+    - [ ] Connect Netlify CMS
+    - [ ] Design Tokens
   - [ ] QA
-- [ ] Pull Request
+- [ ] Pull Request Master
