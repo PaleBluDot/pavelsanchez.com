@@ -10,10 +10,10 @@ gulp.task('serve', function() {
   });
 
   gulp
-    .watch(project.buildSrc + '/_includes/js/**/*', gulp.parallel('scripts'))
+    .watch(project.buildSrc + '/_includes/assets/js/**/*', gulp.parallel('scripts'))
     .on('change', browserSync.reload);
   gulp
-    .watch(project.buildSrc + '/_includes/sass/**/*', gulp.parallel('styles'))
+    .watch(project.buildSrc + '/_includes/assets/sass/**/*', gulp.parallel('styles'))
     .on('change', browserSync.reload);
   gulp
     .watch(project.buildSrc + '/**/*', gulp.parallel('generate'))
