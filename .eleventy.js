@@ -1,6 +1,8 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+// Import data files
+const site = require('./src/_data/site.json');
 
 module.exports = function(config) {
 
@@ -34,17 +36,17 @@ module.exports = function(config) {
 
 
   // pass some assets right through
-  config.addPassthroughCopy("./src/site/images");
-  config.addPassthroughCopy('./src/site/admin/config.yml');
+  config.addPassthroughCopy("./src/images");
+  config.addPassthroughCopy('./src/admin/config.yml');
 
   // make the seed target act like prod
   env = (env=="seed") ? "prod" : env;
   return {
     dir: {
-      input: "src/site",
+      input: "src/",
       output: "build",
       includes: '_includes',
-      data: `_data/${env}`
+      data: "_data/"
     },
     templateFormats : ["njk", "md", "11ty.js", 'html', 'liquid'],
     htmlTemplateEngine : "njk",

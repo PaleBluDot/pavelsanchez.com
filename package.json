@@ -1,10 +1,10 @@
 {
-  "name": "PSD",
-  "version": "0.0.1",
+  "name": "psd",
+  "version": "1.0.1",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
     "start": "npm run dev",
-    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "dev": "gulp dev && cross-env ELEVENTY_ENV=dev eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=prod eleventy",
     "seed": "cross-env ELEVENTY_ENV=seed eleventy"
   },
@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PaleBluDot/eleventynine/issues"
+    "url": "https://github.com/PaleBluDot/PSD.com/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://pavelsanchez.com",
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
@@ -30,7 +30,7 @@
     "browser-sync": "^2.26.3",
     "cssnano": "^4.1.10",
     "dotenv": "^8.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-image-resize": "^0.13.0",
