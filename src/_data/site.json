@@ -1,8 +1,9 @@
 {
 	"title": "PSD",
+	"name": "Test Name Goes Here",
 	"url": "https://pavelsanchez.com",
 	"repo": "https://github.com/PaleBluDot/PSD.com",
-	"description": "Portfolio website of Pavel Sanchez that fatures his web and print design, web development, and calligraphy",
+	"description": "Portfolio website of Pavel Sanchez that fatures his web and print design, web development, and calligraphy.",
 	"author": {
 		"name": "Pavel Sanchez",
 		"Handle": "@psdbk",
@@ -15,6 +16,12 @@
 		"url": "https://staging.pavelsanchez.com/feed/feed.xml",
 		"id": "https://staging.pavelsanchez.com/"
 	},
+	"social": {
+		"twitter": "https://psd.sh/home",
+		"instagram": "https://psd.sh/ig",
+		"github": "https://psd.sh/github",
+		"linkedin": "https://psd.sh/linkedin"
+	}
 }
 
 
