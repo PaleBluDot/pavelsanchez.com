@@ -3,6 +3,12 @@ header {
   background: $nav-color;
   height: 50px;
   width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
   a {
     color: $headline-color;
   }
