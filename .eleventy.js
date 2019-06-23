@@ -44,7 +44,7 @@ module.exports = function(config) {
   return {
     dir: {
       input: "src/",
-      output: "build",
+      output: "build/",
       includes: '_includes',
       data: "_data/"
     },
