@@ -17,7 +17,6 @@ gulp.task('dev', gulp.series('clean-build', 'assets'));
 gulp.task(
   'build',
   gulp.series(
-    'generate',
-    'assets'
+    'dev'
   )
 );
