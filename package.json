@@ -1,7 +1,7 @@
 {
   "name": "PSD",
-  "version": "0.0.1",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "version": "1.0.1",
+  "description": "Portfolio website of Pavel Sanchez that fatures his web and print design, web development, and calligraphy.",
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
