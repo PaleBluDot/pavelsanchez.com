@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			".*rc": "yaml"
+		},
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/build/css/"
+			}
+		]
+	}
+}

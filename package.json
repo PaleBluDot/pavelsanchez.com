@@ -1,0 +1,31 @@
+{
+	"name": "psd.com",
+	"version": "2.0.0",
+	"description": "My personal portfolio website and blog!",
+	"main": "eleventy.js",
+	"scripts": {
+		"start": "npm run dev",
+		"dev": "eleventy --serve",
+		"build": "eleventy",
+		"seed": "eleventy",
+		"clean": "rm -rf build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PaleBluDot/PSD.com.git"
+	},
+	"author": "Pavel Sanchez",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/PaleBluDot/PSD.com/issues"
+	},
+	"homepage": "https://github.com/PaleBluDot/PSD.com#readme",
+	"dependencies": {
+		"@11ty/eleventy": "^0.10.0",
+		"axios": "^0.19.2",
+		"dotenv": "^8.2.0"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.0"
+	}
+}

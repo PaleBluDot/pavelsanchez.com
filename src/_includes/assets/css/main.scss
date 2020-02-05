@@ -1,0 +1,18 @@
+body {
+	width: 1000px;
+}
+.services,
+.projects,
+.meta {
+	max-width: 100%;
+}
+.heading {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.heading p {
+	margin-left: 20px;
+}
+.tool-tag {
+}
