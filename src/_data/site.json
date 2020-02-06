@@ -1,0 +1,20 @@
+{
+	"author": "Pavel Sanchez",
+	"description": "My Personal Website and blog!",
+	"logo": "src/assets/images/logoPos.png",
+	"mailto": "mailto:info@pavelsanchez.com",
+	"repo": "https://github.com/PaleBluDot/psd.com.git",
+	"title": "PSD",
+	"url": "https://pavelsanchez.com",
+
+	"meta": {
+		"application-name": "Pavel Sanchez Designs",
+		"author": "Pavel Sanchez",
+		"character-set": "UTF-8",
+		"content-type": "text/html",
+		"description": "My Personal Website.",
+		"keyword": "HTML, CSS, JS, SSG, 11ty",
+		"theme-color": "#000000",
+		"viewport": "width=device-width, initial-scale=1.0"
+	}
+}
