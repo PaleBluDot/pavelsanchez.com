@@ -1,8 +1,8 @@
-# PSD.com
+# PSD.com Staging
 
-My personal portfolio website and blog.
+My personal websites staging repo.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a14e23b3-7e3e-4f35-87e0-e148736eb2f6/deploy-status)](https://app.netlify.com/sites/psd-portfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb6148d6-ffd9-429d-b4b3-a78c4cf651bc/deploy-status)](https://app.netlify.com/sites/psd-staging/deploys)
 
 ## Todo list
 
