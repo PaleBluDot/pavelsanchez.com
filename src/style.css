@@ -3,6 +3,7 @@
 	--clr-blue: #4682b4;
 	--clr-black: #000000;
 	--clr-red: #ef404d;
+	--clr-yellow: #ffff00;
 	--clr-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	--ff-default: 'Poppins', 'Gotham', 'Helvetica', sans-serif;
 	--ff-size: 10px;
@@ -29,7 +30,7 @@ html, body {
 
 body {
 	font-family: var(--ff-default);
-	background: var(--clr-white);
+	background: var(--clr-black);
 	width: var(--full);
 }
 
@@ -41,27 +42,28 @@ a {
 /*========================================
 			Landing Section
 ========================================*/
-#wrapper {
+.container {
 	width: var(--full);
 	height: var(--full);
-	position: relative;
 	background: var(--clr-black);
+	display: var(--display);
+	justify-content: center;
+	align-items: center;
 }
 
-.landing-Bg {
+/* .landing-Bg {
 	width: var(--full);
 	height: var(--full);
-	background: url(/img/BG.jpg)center center no-repeat;
+	background: url(BG.jpg) center center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	display: var(--display);
 	justify-content: center;
 	align-items: center;
-}
+} */
 
-.text-wrap {
-	position: absolute;
+.content {
 	display: var(--display);
 	justify-content: center;
 	flex-direction: column;
@@ -80,11 +82,6 @@ a {
 	text-align: center;
 }
 
-.landing-text {
-	font-size: 1.8rem;
-	text-align: center;
-}
-
 .landing-btn {
 	display: var(--display);
 }
@@ -92,6 +89,7 @@ a {
 .landing-btn a {
 	display: inline-block;
 	background: var(--clr-blue);
+	color: var(--clr-white);
 	padding: 15px 30px;
 	border-radius: 5px;
 	margin: 40px auto 20px;
@@ -100,6 +98,10 @@ a {
 	font-weight: 600;
 	letter-spacing: 2px;
 	transition: all 300ms ease-in;
+}
+
+.fab {
+	color: var(--clr-yellow);
 }
 
 .landing-btn a:hover {
