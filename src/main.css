@@ -1,3 +1,13 @@
+:root {
+	--clr-white: #ffffff;
+	--clr-blue: #4682b4;
+	--clr-black: #000000;
+	--clr-red: #ef404d;
+	--clr-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	--ff-default: 'Poppins', 'Gotham', 'Helvetica', sans-serif;
+	--ff-size: 10px;
+}
+
 /*========================================
 			Basic Tags
 ========================================*/
@@ -5,19 +15,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #ffffff;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+	color: var(--clr-white);
 }
 
 html, body {
-	font-size: 10px;
+	font-size: var(--ff-size);
 	height: 100%;
 }
 
 body {
-	font-family: 'Poppins', 'Gotham', 'Helvetica', sans-serif;
-	background: #fcfcfc;
+	font-family: var(--ff-default);
+	background: var(--clr-white);
 	width: 100%;
 }
 
@@ -33,7 +41,7 @@ a {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background: #000000;
+	background: var(--clr-black);
 }
 
 .landing-Bg {
@@ -43,40 +51,22 @@ a {
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-box-align: center;
-	-ms-flex-pack: center;
-	-ms-flex-align: center;
 }
 
 .text-wrap {
 	position: absolute;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-box-pack: center;
-	-ms-flex-direction: column;
-	-ms-flex-pack: center;
 }
 
 .landing-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 }
 
 .landing-intro {
@@ -92,48 +82,35 @@ a {
 }
 
 .landing-btn {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 .landing-btn a {
 	display: inline-block;
-	background: steelblue;
+	background: var(--clr-blue);
 	padding: 15px 30px;
 	border-radius: 5px;
 	margin: 40px auto 20px;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--clr-shadow);
 	font-size: 1.8em;
 	font-weight: 600;
 	letter-spacing: 2px;
 	transition: all 300ms ease-in;
-	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 300ms ease-in;
-	-moz-transition: all 300ms ease-in;
-	-o-transition: all 300ms ease-in;
 }
 
 .landing-btn a:hover {
-	background: white;
+	background: var(--clr-white);
 	cursor: pointer;
-	color: steelblue;
+	color: var(--clr-blue);
 }
 
 .contact-info {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: white;
+	color: var(--clr-white);
 	font-size: 40px;
 	margin: 20px 0;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-box-align: center;
-	-ms-flex-direction: column;
-	-ms-flex-align: center;
 }
 
 .contact-info i {
@@ -158,71 +135,6 @@ a {
 	100% {stroke-dashoffset: 0;}
 }
 
-@-moz-keyframes scaledown {
-	0% {-webkit-transform: scale(1);transform: scale(1);opacity: .6;}
-	50% {-webkit-transform: scale(.2);transform: scale(.2);opacity: 0;}
-}
-@-o-keyframes scaledown {
-	0% {-webkit-transform: scale(1);transform: scale(1);opacity: .6;}
-	50% {-webkit-transform: scale(.2);transform: scale(.2);opacity: 0;}
-}
-@-webkit-keyframes scaledown {
-	0% {-webkit-transform: scale(1);transform: scale(1);opacity: .6;}
-	50% {-webkit-transform: scale(.2);transform: scale(.2);opacity: 0;}
-}
-
-@keyframes scaledown {
-	0% {-webkit-transform: scale(1);transform: scale(1);opacity: .6;}
-	50% {-webkit-transform: scale(.2);transform: scale(.2);opacity: 0;}
-}
-@-moz-keyframes fill {
-	0% {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
-	30%{-webkit-transform: scale(1.1);transform: scale(1.1);}
-	60% {-webkit-transform: scale(.9);transform: scale(.9);}
-	100% {fill: #fff;}
-}
-@-o-keyframes fill {
-	0% {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
-	30%{-webkit-transform: scale(1.1);transform: scale(1.1);}
-	60% {-webkit-transform: scale(.9);transform: scale(.9);}
-	100% {fill: #fff;}
-}
-@-webkit-keyframes fill {
-	0% {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
-	30%{-webkit-transform: scale(1.1);transform: scale(1.1);}
-	60% {-webkit-transform: scale(.9);transform: scale(.9);}
-	100% {fill: #fff;}
-}
-
-@keyframes fill {
-	0% {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
-	30%{-webkit-transform: scale(1.1);transform: scale(1.1);}
-	60% {-webkit-transform: scale(.9);transform: scale(.9);}
-	100% {fill: #fff;}
-}
-
-@-moz-keyframes text {
-	0% {-webkit-transform: translateY(-100px);transform: translateY(-100px);}
-	50% {opacity: 0;}
-	100%{opacity: 1}
-}
-@-o-keyframes text {
-	0% {-webkit-transform: translateY(-100px);transform: translateY(-100px);}
-	50% {opacity: 0;}
-	100%{opacity: 1}
-}
-@-webkit-keyframes text {
-	0% {-webkit-transform: translateY(-100px);transform: translateY(-100px);}
-	50% {opacity: 0;}
-	100%{opacity: 1}
-}
-
-@keyframes text {
-	0% {-webkit-transform: translateY(-100px);transform: translateY(-100px);}
-	50% {opacity: 0;}
-	100%{opacity: 1}
-}
-
 svg {
 	display: block;
 	width: 65%;
@@ -233,35 +145,22 @@ svg {
 
 #logoNeg * {
 	transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
 }
 
 .logo {
-	stroke: #fff;
+	stroke: var(--clr-white);
 	stroke-width: 15;
 	stroke-dasharray: 4235;
 	stroke-dashoffset: 4235;
-	animation: offset 2.5s linear forwards,
-		scaledown .5s ease-out 2.5s forwards,
-		fill 1s ease-out 3s forwards;
-	-moz-animation: offset 2.5s linear forwards,
-		scaledown .5s ease-out 2.5s forwards,
-		fill 1s ease-out 3s forwards;
-	-o-animation: offset 2.5s linear forwards,
-		scaledown .5s ease-out 2.5s forwards,
-		fill 1s ease-out 3s forwards;
-	-webkit-animation: offset 2.5s linear forwards,
-		scaledown .5s ease-out 2.5s forwards,
-		fill 1s ease-out 3s forwards;
+	animation: 	offset 2.5s linear forwards,
+							scaledown .5s ease-out 2.5s forwards,
+							fill 1s ease-out 3s forwards;
 }
 
 .logo-404 {
-	stroke: #fff;
+	stroke: var(--clr-white);
 	stroke-width: 15;
-	fill: #fff;
+	fill: var(--clr-white);
 	width: 100%
 }
 
