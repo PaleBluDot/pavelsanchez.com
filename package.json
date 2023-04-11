@@ -16,7 +16,8 @@
     "build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
