@@ -5,26 +5,20 @@
   "main": "eleventy.js",
   "author": "Pavel Sanchez",
   "license": "MIT",
-  "engines": {
-    "node": "14.15.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PaleBluDot/website.git"
   },
   "scripts": {
-    "start": "cross-env ELEVENTY_ENV=dev concurrently \"npm run clean\"  \"npm run dev\"",
-    "dev": "eleventy --serve",
+    "start": "npm run clean && npm run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
     "clean": "rm -r build",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+    "build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2"
+    "@11ty/eleventy": "^2.0.1"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0"
   }

@@ -1,4 +1,4 @@
-# Pavelsanchez.com
+# pavelsanchez.com
 
 My personal portfolio website.
 
