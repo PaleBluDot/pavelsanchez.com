@@ -8,8 +8,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
 
-  eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
-  eleventyConfig.addPassthroughCopy( 'src/main.css' );
+  eleventyConfig.addPassthroughCopy({ 'src/assets/img': 'img' });
+
+  eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy('favicon.ico');
 
   eleventyConfig.setDataDeepMerge(true);
