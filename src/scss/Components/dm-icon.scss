@@ -1,0 +1,21 @@
+.fa-moon {
+  display: none;
+}
+
+.dm-icon {
+  cursor: pointer;
+}
+
+body.light-mode {
+  --body-bg: #{$white};
+  --menu-bg: #{$grey};
+  --text-color: #{$black};
+  --sun: #{$dark};
+
+  .fa-sun {
+    display: none;
+  }
+  .fa-moon {
+    display: block;
+  }
+}

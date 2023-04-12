@@ -1,0 +1,38 @@
+/*
+**---------------------------------
+***	Project: PSD Quickstart
+***	version: 0.0.5
+***	last modified: 2021.01.18
+***	author: Pavel Sanchez
+***	email: pavel@bluedot.dev
+***	website: http://pavelsanchez.com
+**---------------------------------
+***********************************
+**---------------------------------
+***	 CSS TABLE OF CONTENTS
+***--------------------------------
+***  1 - Helpers
+***  2 - Global
+***  3 - Components
+***  3 - Pages
+**---------------------------------
+*/
+
+@import "config.scss";
+
+// 1. Configuration and helpers
+@import "Helpers/_helpers";
+
+// 2. Global styles
+@import "Globals/_globals";
+
+// 3. Components
+@import "Components/components";
+
+// 4. Pages
+@import "Pages/pages";
+
+
+:root {
+	--red: rgb(145, 41, 48)
+}
