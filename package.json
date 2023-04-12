@@ -11,17 +11,19 @@
   },
   "scripts": {
     "start": "npm run clean && npm run dev",
-    "dev": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "dev": "npm run sass:dev && npx @11ty/eleventy --serve",
     "clean": "rm -r build",
-    "build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy"
+    "sass:dev": "npx sass src/scss/main.scss --style=expanded build/main.dev.css",
+    "sass": "npx sass src/scss/main.scss --style=compressed build/main.min.css",
+    "build": "npm run sass && ENVIRONMENT=production npx @11ty/eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0"
+    "@11ty/eleventy": "^2.0.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.0"
   }
 }
