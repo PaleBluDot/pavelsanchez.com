@@ -1,16 +1,10 @@
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
 
-  eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
-  eleventyConfig.addPassthroughCopy( 'src/main.css' );
-  eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPassthroughCopy({ 'src/assets/img': 'img' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/favicon.ico': 'favicon.ico' });
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -26,3 +20,4 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+// console.log(process.env)

@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-family: $text-fonts;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  transition: all 0.5 ease-in-out;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol {
+  margin-inline-start: 3rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-fonts;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+code {
+  font-family: $code-fonts;
+}
